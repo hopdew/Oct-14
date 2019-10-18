@@ -44,3 +44,68 @@ print(acc)
 #   number.
 # Write a function to compute the Nth Fibonacci number, where N is a parameter
 #   You may assume that N will be greater than or equal to 3.
+
+#  A Monte Carlo Simulation
+import random
+print(random.random())
+# Random here means (0,1) (not including one), resulting in a decimal.
+# In computer science, there is no true "random", which is only in its true from in nature. There is a
+# way to calculate the computer "random".
+
+# Boolean expressions
+# (six possible opperators):
+#           > greater than
+#           >= greater than or equal to
+#           < less than
+#           <= less than or equal to
+#           == the same as [equal to]
+#           != not equal to
+
+dogWeight = 25
+print(dogWeight > 25)
+kitkatBags = 3425
+
+# Compund Boolean operators:
+#   -and
+#   -or
+#   -not
+
+print(dogWeight < 30 and kitkatBags < 30000)
+
+a = 5
+b = 10
+c = 75
+
+if a > b:
+    c = 75
+
+print(c)
+
+if a > b:
+    c = 45
+    if b > c:
+        a = 25
+    else:
+        a = -25
+else:
+
+    c = 1050505050050505050505050000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    if b == a :
+        c = a + b
+print(c)
+print(a)
+d = 55
+e = 72
+f = 44
+ans = 0
+if d > e:
+    ans = 12
+else:
+    if d == e:
+        ans = 50
+else:
+    if f < d * e
+        ans = 100
+    else:
+        ans = 75
+print(ans)

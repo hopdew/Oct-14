@@ -108,3 +108,48 @@ else:
             ans = 100
             ans = 75
 print(ans)
+
+# Randomized ability to approximate Pi
+import turtle
+def showMontePi(numDarts):
+
+    scn = turtle.Screen()
+    brother = turtle.Turtle()
+
+    scn.setworldcoordinates(-2, -2, 2, 2)
+    brother.penup()
+    brother.goto(-1,0)
+    brother.pendown()
+    brother.goto(1,0)
+    brother.penup()
+    brother.goto(0,1)
+    brother.pendown()
+    brother.goto(0,-1)
+
+
+    inCircle = 0
+
+    for i in range(numDarts):
+        x = random.random()
+        y = random.random()
+
+        distance = math.sqrt(x**2 + y**2)
+        brother.goto(x,y)
+
+        if distance <= 1:
+            inCircle = inCircle + 1
+            brother.color("blue")
+        else:
+            brother.color("red")
+        brother.dot
+    pi = inCircle / numDarts * 4
+    scn.exitonclick()
+    return pi
+
+showMontePi(100)
+
+
+
+
+
+

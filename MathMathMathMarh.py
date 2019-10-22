@@ -95,7 +95,7 @@ else:
 print(c)
 print(a)
 d = 55
-e = 72
+e: int = 72
 f = 44
 ans = 0
 if d > e:
@@ -103,9 +103,8 @@ if d > e:
 else:
     if d == e:
         ans = 50
-else:
-    if f < d * e
-        ans = 100
     else:
-        ans = 75
+        if f < d * e:
+            ans = 100
+            ans = 75
 print(ans)

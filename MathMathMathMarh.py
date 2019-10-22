@@ -121,6 +121,7 @@ def showMontePi(numDarts):
     brother.goto(-1,0)
     brother.pendown()
     brother.goto(1,0)
+
     brother.penup()
     brother.goto(0,1)
     brother.pendown()
@@ -128,6 +129,7 @@ def showMontePi(numDarts):
 
 
     inCircle = 0
+    brother.penup()
 
     for i in range(numDarts):
         x = random.random()
@@ -141,7 +143,9 @@ def showMontePi(numDarts):
             brother.color("blue")
         else:
             brother.color("red")
-        brother.dot
+
+    brother.dot()
+
     pi = inCircle / numDarts * 4
     scn.exitonclick()
     return pi

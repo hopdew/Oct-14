@@ -157,46 +157,46 @@ showMontePi(10000000)
 # Modify the simulation to plot points in the entire circle
 #   Adjust the calculated value of pi accordingly
 
-import turtle
-def showMontePi(numDarts):
 
-    scn = turtle.Screen()
-    brother = turtle.Turtle()
+# def showMontePi(numDarts):
 
-    scn.setworldcoordinates(-2, -2, 2, 2)
-    brother.penup()
-    brother.goto(-1,0)
-    brother.pendown()
-    brother.goto(1,0)
+#    scn = turtle.Screen()
+ #   brother = turtle.Turtle()
 
-    brother.penup()
-    brother.goto(0,1)
-    brother.pendown()
-    brother.goto(0,-1)
+#    scn.setworldcoordinates(-2, -2, 2, 2)
+#    brother.penup()
+ #   brother.goto(-1,0)
+ #   brother.pendown()
+#    brother.goto(1,0)
+
+#    brother.penup()
+ #   brother.goto(0,1)
+ #   brother.pendown()
+#    brother.goto(0,-1)
 
 
-    inCircle = 0
-    brother.penup()
+#    inCircle = 0
+#    brother.penup()
 
-    for i in range(numDarts):
-        x = random.random()
-        y = random.random()
+ #   for i in range(numDarts):
+#        x = random.random()
+#        y = random.random()
 
-        distance = math.sqrt(x**2 + y**2)
+#        distance = math.sqrt(x**2 + y**2)
 
-        brother.goto(x,y)
+#        brother.goto(x,y)
 
-        if distance <= 1:
-            inCircle = inCircle + 1
-            brother.color("blue")
-        else:
-            brother.color("red")
+ #       if distance <= 1:
+#            inCircle = inCircle + 1
+ #           brother.color("blue")
+ #       else:
+ #           brother.color("red")
+#
+ #       brother.dot()
 
-        brother.dot()
-
-    pi = inCircle / numDarts * 4
-    scn.exitonclick()
-    return pi
+ #   pi = inCircle / numDarts * 8
+  #  scn.exitonclick()
+ #   return pi
 
 showMontePi(10000000)
 

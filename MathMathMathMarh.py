@@ -109,6 +109,8 @@ else:
             ans = 75
 print(ans)
 
+
+
 # Randomized ability to approximate Pi
 import turtle
 def showMontePi(numDarts):
@@ -132,10 +134,10 @@ def showMontePi(numDarts):
     brother.penup()
 
     for i in range(numDarts):
-        x = random.random()
-        y = random.random()
+        x = (-1,2)
+        y = (-1,2)
 
-        distance = math.sqrt(x**2 + y**2)
+        distance = math.sqrt(x**3 + y**3)
 
         brother.goto(x,y)
 
